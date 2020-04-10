@@ -1,0 +1,11 @@
+/* pages/lianxi/lianxi.wxss */
+.img1{
+  box-shadow: 5px 8px 30px rgba(53,178,225,0.26);
+  background-color: aqua;  
+  text-align: center;
+}
+.img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
