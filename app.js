@@ -33,6 +33,16 @@ App({
       }
     })
   },
+  onLaunch(opts) {
+    console.log('onLaunch监听小程序初始化。',opts)
+  },
+  onShow(opts) {
+    console.log('onShow监听小程序启动或切前台',opts)
+  },
+  onHide() {
+    console.log('onHide监听小程序切后台')
+  },
+
   globalData: {
     userInfo: null
   }

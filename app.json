@@ -1,14 +1,20 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/lianxi/lianxi"
+    "pages/lianxi/lianxi",
+    "pages/common/foot",
+    "pages/tapevent/tapevent",
+    "pages/Date/Date",
+    "pages/Data/detail/detail",
+    "pages/request/request"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

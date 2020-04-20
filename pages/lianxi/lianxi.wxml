@@ -1,16 +1,67 @@
-<!--pages/lianxi/lianxi.wxml-->
-<text>pages/lianxi/lianxi.wxml</text>
-<view class="img1">
-<image class="img" mode="widFix" src="http://img.godreams.cn/images/2020/03/28/ODi2.th.jpg"></image>
+<view class="pag">
+<view class="header">
+	<view class="p">第一个小程序页面</view>
+	<view class="pp">感谢支持</view>
 </view>
-		<view class="button-sp-area">
-			<a class="weui-btn weui-btn_primary">页面主操作</a>
-			<a class="weui-btn weui-btn_primary weui-btn_loading"><i class="weui-loading"></i>页面主操作</a>
-			<a class="weui-btn weui-btn_disabled weui-btn_primary">页面主操作</a>
-			<a class="weui-btn weui-btn_default">页面次要操作</a>
-			<a class="weui-btn weui-btn_default weui-btn_loading"><i class="weui-loading"></i>页面次操作</a>
-			<a class="weui-btn weui-btn_disabled weui-btn_default">页面次要操作</a>
-			<a class="weui-btn weui-btn_warn">警告类操作</a>
-			<a class="weui-btn weui-btn_warn weui-btn_loading"><i class="weui-loading"></i>警告类操作</a>
-			<a class="weui-btn weui-btn_disabled weui-btn_warn">警告类操作</a>
+
+<view class="home-top">
+    <view class="home-swiper" text-align="center">
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{activecolor}}">
+          <block wx:for="{{imgUrls}}" wx:key="*this" text-align="center">
+            <swiper-item >
+                <image src="{{item}}"  class="slide-image" />
+            </swiper-item>
+          </block>
+        </swiper>
+    </view>
+</view>
+
+<view class="page__bd">
+<view wx:for="{{artical}}" wx:for-item="artical" wx:key="*this">
+	<view class="weui-form-preview">
+		<view class="weui-form-preview__hd">
+			<view class="weui-form-preview__item">
+				<label class="weui-form-preview__label">文章名字</label>
+				<em class="weui-form-preview__value">{{artical.name}}</em>
+			</view>
+		</view>
+		<view class="weui-form-preview__bd">
+			<view class="weui-form-preview__item">
+				<label class="weui-form-preview__label">内容</label>
+				<text class="weui-form-preview__value">{{artical.content}}</text>
+			</view>
+		</view>
+		<view class="weui-form-preview__ft">
+			<button class="weui-form-preview__btn weui-form-preview__btn_primary" bindtap="allArtical">查看全文</button>
+		</view>
+	</view>
+	</view>
+	</view>
+</view>
+
+<view class="footer">
+	<view class="page" data-weui-theme="{{theme}}">
+		<view class="page__bd" style="height: 100%;">
+			<view class="weui-tab">
+				<view class="weui-tab__panel">
+				</view>
+				<view class="weui-tabbar" >
+					<view class="weui-tabbar__item weui-bar__item_on" bindtap="wenzhang" hover-class="hover">
+						<view style="display: inline-block; position: relative;">
+							<image src="../images/artical.svg" alt class="weui-tabbar__icon"></image>
+						</view>
+						<view class="weui-tabbar__label">文章</view>
+					</view>
+					<view class="weui-tabbar__item" bindtap="zhaopian" hover-class="hover">
+						<image src="../images/photo.svg" alt class="weui-tabbar__icon"></image>
+						<view class="weui-tabbar__label" >照片</view>
+					</view>
+					<view class="weui-tabbar__item" bindtap="wo" hover-class="hover">
+						<image src="../images/me.svg" alt class="weui-tabbar__icon"></image>
+						<view class="weui-tabbar__label">我</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
 </view>

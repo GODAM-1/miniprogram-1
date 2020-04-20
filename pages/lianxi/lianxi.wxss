@@ -1,11 +1,31 @@
-/* pages/lianxi/lianxi.wxss */
-.img1{
-  box-shadow: 5px 8px 30px rgba(53,178,225,0.26);
-  background-color: aqua;  
-  text-align: center;
+.pag{ 
+  padding-bottom:59.6px;
 }
-.img{
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
+.header{
+  padding: 30rpx;
+	text-align: center;
+	background-color:#1abc9c ;
+	color:white;
+}
+.p{
+  font-size: 1.5rem;
+}
+
+.pp{
+  font-size: 0.8rem;
+  color: rgb(211, 230, 230);
+}
+
+.home-top{
+  padding: 1rem;
+}
+
+.hover{
+  background-color:rgb(225, 222, 222);
+}
+
+.footer{
+  width: 100%;
+  position:fixed;
+  bottom: 0px;
 }

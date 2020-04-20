@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<import src="/pages/common/foot.wxml" />
 <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
@@ -13,4 +14,15 @@
 </view>
 <view class="index-link">
 <navigator url="./../lianxi/lianxi" class="item-link">个人练习网站</navigator> </view>
+<navigator url="./../tapevent/tapevent" class="item-link">tapevent</navigator> 
+<navigator url="./../Date/Date" class="item-link">Date</navigator>
+<navigator url="./../Data/detail/detail?id={{index}}&name={{movies.name}}&img={{movies.img}}&desc={{movies.desc}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">js</navigator>
+<navigator url="./../request/request" class="item-link">request</navigator>
+	
+<view id="viewclick" style="background-color: red;padding:20px;" data-sku="100000177760" data-spu="100000177756" data-pid="100000177756" data-toggle="Apple iPhone XR" data-jd-color="Red" data-productBrand="Apple" bindtap="clickView">
+  <image id="imageclick" src="https://img13.360buyimg.com/n7/jfs/t1/842/9/3723/77573/5b997bedE4f438e5b/ccd1077b985c7150.jpg" mode="widthFix" style="width:200rpx" bindtap="clickImage">点击button</image>
+</view>
+
+
+<template is="foot" />
 
